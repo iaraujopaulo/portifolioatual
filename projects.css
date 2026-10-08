@@ -1,0 +1,32 @@
+#projects {
+    max-width: 100%;
+  }
+  
+  #projects .project-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  #projects .card {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    gap: 5px;
+    border-radius: 2px;
+  }
+  
+  #projects .card img {
+    border: 1px solid #e2e2e2;
+  }
+  
+  #projects .card {
+    transition: transform 0.3s;
+  }
+  
+  #projects .card:hover {
+    transform: scale(1.02);
+  }

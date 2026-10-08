@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igor Araujo</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Aplica o tema salvo antes de renderizar (evita "piscar" branco) -->
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-bs-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <label for="menu-check" class="menu-check-label fa-solid fa-bars"></label>
+  <input type="checkbox" id="menu-check">
+  <aside class="aside">
+    <a href="#home">
+      <img class="profile-image" src="perfil.jpeg">
+    </a>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#home" class="menu-link">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#skills" class="menu-link">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Habilidades
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#experience" class="menu-link">
+            <i class="fa-solid fa-briefcase"></i>
+            Experiências
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#projects" class="menu-link">
+            <i class="fa-solid fa-flask"></i>
+            Projetos
+          </a>
+        </li>
+        <li class="menu-item menu-item-theme">
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Ativar tema escuro" aria-pressed="false"
+            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tema escuro">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <section id="home">
+      <h1 class="section-title">Igor Araujo</h1><br>
+      <h3 class="technologies">Desenvolvedor | HTML | CSS | Bootstrap | JS | React | NodeJS | Cypress | Git | Github | C++ | Python | Django
+        | Flask | Fastapi | PostgreSQL</h3>
+      <address><br>
+        <a href="mailto:iaraujopaulo@gmail.com" class="email-link"><strong>iaraujopaulo@gmail.com</strong></a>
+      </address>
+
+      <div class="section-content">
+        <p class="section-description">
+          Olá, sou Igor, desenvolvedor Full Stack com foco em criar aplicações web eficientes, escaláveis e de alta
+          performance. Transformo ideias complexas em soluções digitais completas. Como desenvolvedor Full Stack,
+          unifico o design funcional do Front-end com a robustez e segurança do Back-end. Minha prioridade é entregar
+          códigos limpos, arquiteturas escaláveis e produtos que entreguem excelente experiência para o usuário final e
+          eficiência operacional para as empresas.
+        </p>
+        <ul class="links">
+          <li>
+            <a href="https://linkedin.com/in/iap10" target="_blank">
+              <span class="fa-brands fa-linkedin"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/iaraujopaulo" target="_blank">
+              <span class="fa-brands fa-github"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/igoraraujo1313" target="_blank">
+              <span class="fa-brands fa-instagram"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/igoraraujopaulo" target="_blank">
+              <i class="fa-brands fa-x"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/igor.araujo.9083477" target="_blank">
+              <i class="fa-brands fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="section-content">
+
+        <p class="section-description">
+        <h3>Front-end</h3> <br>
+        &bull; HTML5 e CSS3: Criação de estruturas limpas, designs responsivos e uso de pré-processadores ou frameworks
+        como Bootstrap CSS. <br>
+        &bull; JavaScript: Domínio da lógica de programação no navegador, manipulação do DOM e programação assíncrona.
+        <br>
+        &bull; Frameworks Modernos: Experiência comprovada com bibliotecas e frameworks como React. <br><br>
+
+        <h3>Back-end</h3> <br>
+        &bull; Linguagens de Servidor: Domínio de Node.js, Python, Java, C# ou PHP para gerenciar regras de negócio.
+        <br>
+        &bull; Criação de APIs: Desenvolvimento e consumo de APIs RESTful ou GraphQL para a comunicação entre sistemas.
+        <br>
+        &bull; Autenticação e Segurança: Implementação de fluxos seguros com JWT, OAuth e criptografia de dados básicos.
+        <br><br>
+
+        <h3>Bancos de Dados e DevOps</h3> <br>
+        &bull; Bancos de Dados Relacionais e Não Relacionais: Modelagem e consultas em SQL (PostgreSQL, MySQL) e NoSQL
+        (MongoDB). <br>
+        &bull; Controle de Versão: Uso avançado de Git e GitHub para gerenciar o código e histórico de projetos. <br>
+        &bull; Deploy e Hospedagem: Publicação de aplicações em plataformas como Vercel, Netlify, AWS, Heroku. <br><br>
+        </p>
+
+        <div class="tools">
+          <h3 class="tools-title">Tecnologias</h3>
+          <ul>
+            <li>
+              <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-js"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-react"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-node-js"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-git"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-github"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-gitlab"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-bitbucket"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-gitkraken"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-c"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-python"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-flask"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-aws"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-docker"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-server"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-windows"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linux"></i>
+            </li>
+            <li>
+            <i class="fa-brands fa-apple"></i>
+            </li>
+            <li>
+              <i class="devicon-fastapi-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-django-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-postgresql-plain"></i>
+            </li>
+            <li>
+            <img class="letsencrypt-icon" src="https://cdn.simpleicons.org/letsencrypt/78293d" alt="Let's Encrypt" >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experiências</h2>
+      <div class="section-content">
+        <div class="experience-item">
+          <div class="company">
+            <h3>Desenvolvedor HTML | CSS | JS | REACT | C++ | PYTHON</h3>
+            <h3>Home Office</h3>
+            <h4>Dez/2023 - Atualmente</h4>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="company">
+            <h3>Desenvolvedor Python</h3>
+            <h3>Hibrido</h3>
+            <h4>Ago/2022 - Nov/2023</h4>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="company">
+            <h3>Desenvolvedor C++</h3>
+            <h3>Home Office</h3>
+            <h4>Set/2020 - Jul/2022</h4>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="company">
+            <h3>Desenvolvedor C++</h3>
+            <h3>Hibrido</h3>
+            <h4>Mar/2018 - Agt/2020</h4>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="company">
+            <h3>Desenvolvedor | HTML | CSS | Tailwind CSS | JS | React | C++ | Python</h3>
+            <h3>Home Office</h3>
+            <h4>Fev/2011 - Fev/2018</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+     <h2 class="section-title">Projetos</h2>
+
+      <div class="section-content">
+
+       <div class="project-cards">
+
+        <div class="card">
+
+        <img src="portifolio.png" alt="">
+
+        <div class="project-link">
+          <a
+            href="https://iaraujopaulo.github.io/portifolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-brand btn-sm"
+          >
+            <i class="fa-brands fa-github"></i> Github
+          </a>
+        </div>
+
+        <div class="card-body">
+          <h3>Portfólio</h3>
+
+          <p>
+            Desenvolvedor Full Stack com foco em criar aplicações web
+            rápidas, seguras e fáceis de usar. Trabalho desde a interface
+            do usuário (Front-end) até a regra de negócio, banco de dados
+            e servidores (Back-end). Transformo problemas complexos em
+            códigos limpos e soluções eficientes.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      var icon = btn.querySelector('i');
+      var tooltip = new bootstrap.Tooltip(btn, { trigger: 'hover focus' });
+
+      function applyTheme(theme) {
+        var dark = theme === 'dark';
+        var label = dark ? 'Tema claro' : 'Tema escuro';
+        root.setAttribute('data-theme', theme);
+        root.setAttribute('data-bs-theme', theme); // tema do Bootstrap
+        icon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        btn.setAttribute('aria-pressed', dark);
+        btn.setAttribute('aria-label', 'Ativar ' + label.toLowerCase());
+        tooltip.setContent({ '.tooltip-inner': label });
+      }
+
+      applyTheme(root.getAttribute('data-theme') || 'light');
+
+      btn.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+
+</html>
